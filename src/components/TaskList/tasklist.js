@@ -13,7 +13,7 @@ export default function TaskList({ title, onAddTask, tasks }) {
       <div className="title">{title}</div>
       <div className="content">
         {tasks.map((task) => {
-          return <div></div>
+          return <div key={task.id}>{task.title}</div>;
         })}
       </div>
       <button onClick={addTask}>Adicionar Tarefa</button>
@@ -23,6 +23,6 @@ export default function TaskList({ title, onAddTask, tasks }) {
 
 TaskList.propTypes = {
   title: PropTypes.string.isRequired,
-  onAddTask: PropTypes.func.isRequired
+  onAddTask: PropTypes.func.isRequired,
   tasks: PropTypes.array.isRequired
 };
