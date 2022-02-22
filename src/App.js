@@ -11,7 +11,7 @@ const task = {
   state: "pendente"
 };
 
-const idAcc = 0;
+let idAcc = 0;
 const generateId = () => {
   idAcc = idAcc + 1;
   return idAcc;
