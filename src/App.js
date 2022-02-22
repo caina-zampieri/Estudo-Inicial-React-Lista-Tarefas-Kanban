@@ -21,7 +21,6 @@ export default function App() {
   const [tasks, setTasks] = useState([]);
 
   const addTask = (title, state) => {
-    console.log("funcao sendo chamada em app");
     const newTask = {
       id: generateId(),
       title,
